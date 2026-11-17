@@ -10,7 +10,7 @@ should be added as extra `.qol` subcommands so this stays one module.
 ## Setup
 
 1. Re-run CMake so `modules/mod-qol` is picked up, then rebuild worldserver.
-2. Copy `conf/qol.conf.dist` next to `worldserver.conf` as **`qol.conf`**.
+2. Copy `conf/qol.conf.dist` to **`qol.conf`** in the `configs/modules` directory.
    The module loads that file on world config load (and on `.qol reload`).
    The `.dist` file alone is not enough.
 3. Confirm the worldserver log shows `[mod-qol] Enabled` at startup.

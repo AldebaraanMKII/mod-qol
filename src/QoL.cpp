@@ -814,7 +814,7 @@ namespace
         std::string mainConfig = sConfigMgr->GetFilename();
         std::string::size_type slash = mainConfig.find_last_of("/\\");
         std::string directory = (slash != std::string::npos) ? mainConfig.substr(0, slash + 1) : "";
-        return directory + "qol.conf";
+        return directory + "modules/qol.conf";
     }
 }
 
